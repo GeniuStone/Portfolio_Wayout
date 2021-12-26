@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="hyeonseok">
+    <meta name="keyword" content="Wayout">
+    <meta name="description" content="portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한민국 최고 게임 커뮤니티::Wayout</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <!--헤더 시작-->
+    <header class="section">
+        <div class="header_banner">
+            <a href="#" class="header_banner_image"></a>
+            <a href="#" class="banner_close" onclick="return false"><i class="far fa-window-close"></i></a>
+        </div>
+        <div class="sns_util">
+            <ul class="sns">
+                <li><a href="#"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i>Youtube</a></li>
+                <li><a href="#"><i class="fab fa-blogger"></i>Blog</a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i>Twitter</a></li>
+            </ul>
+            <!--상단 메뉴(sns링크들)-->
+            <ul class="util">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">ID/PW 찾기</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">고객문의</a></li>
+            </ul>
+            <!--상단 메뉴(로그인, 회원가입 등등)-->
+        </div>
+        <!--최상단 광고 배너-->
+        <div class="logo_search">
+            <h1 class="logo"><a href="#"><img src="/images/main_logo.png" alt="Wayout" width="230"></a></h1>
+            <!--로고-->
+            <form action="#" name="search_form" method="get">
+                <fieldset>
+                    <legend class="skip">검색</legend>
+                    <label for="search_box" class="skip">검색어 입력</label>                        
+                    <input type="text" id="search_box" class="search_box" maxlength="18">
+                    <button class="search_btn"><i class="fas fa-search"></i></button>
+                </fieldset>
+            </form>
+            <!--검색 박스-->
+        </div>
+        <!--로고, 상단메뉴, 검색, sns-->
+    </header>
+     <!--헤더 끝-->
+
+    <!--메인메뉴 시작-->
+    <nav id="gnb" class="section">
+        <div class="gnb_container">
+            <h2 class="skip">메인메뉴</h2>
+            <ul class="main_menu">
+                <li>
+                    <h2><a href="#" class="mm">게임소식</a></h2>
+                    <ul class="sub_menu">
+                        <li><a href="#">PC</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Xbox</a></li>
+                        <li><a href="#">PlayStation</a></li>
+                        <li><a href="#">SWITCH</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="#" class="mm">리뷰/공략</a></h2>
+                    <ul class="sub_menu">
+                        <li><a href="#">리뷰게시판</a></li>
+                        <li><a href="#">공략게시판</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="#">뉴스</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#" class="mm">커뮤니티</a></h2>
+                    <ul class="sub_menu">                                
+                        <li><a href="#">유머게시판</a></li>
+                        <li><a href="#">자유게시판</a></li>
+                        <li><a href="#">장터게시판</a></li>
+                        <li><a href="#">취미게시판</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="#" class="mm">이벤트</a></h2>
+                    <ul class="sub_menu">                                
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">종료된 이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="#" class="mm">고객문의</a></h2>
+                    <ul class="sub_menu">                                
+                        <li><a href="#">제휴문의</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">광고안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="hot_search_bar">
+                        <span>인기 검색어</span>
+                        <ul>
+                            <li><img src="/images/icon/1.gif" alt="1위"><a href="#">김갑생할머니김</a></li>
+                            <li><img src="/images/icon/2.gif" alt="2위"><a href="#">yhsoft</a></li>
+                            <li><img src="/images/icon/3.gif" alt="3위"><a href="#">아이티에듀넷</a></li>
+                            <li><img src="/images/icon/4.gif" alt="4위"><a href="#">신작게임</a></li>
+                            <li><img src="/images/icon/5.gif" alt="5위"><a href="#">yhsoft폭로</a></li>
+                            <li><img src="/images/icon/6.gif" alt="6위"><a href="#">스매시레전드</a></li>
+                            <li><img src="/images/icon/7.gif" alt="7위"><a href="#">하스스톤</a></li>
+                            <li><img src="/images/icon/8.gif" alt="8위"><a href="#">프론트엔드</a></li>
+                            <li><img src="/images/icon/9.gif" alt="9위"><a href="#">양덕동 맛집</a></li>
+                            <li><img src="/images/icon/10.gif" alt="10위"><a href="#">키보드추천</a></li>
+                        </ul>                            
+                    </div>
+                </li>
+                <li>
+                    <ul class="hot_search_all">
+                        <li><span>실시간 인기 검색어</span></li>
+                        <li><img src="/images/icon/1.gif" alt="1위"><a href="#">김갑생할머니김</a></li>
+                        <li><img src="/images/icon/2.gif" alt="2위"><a href="#">yhsoft</a></li>
+                        <li><img src="/images/icon/3.gif" alt="3위"><a href="#">아이티에듀넷</a></li>
+                        <li><img src="/images/icon/4.gif" alt="4위"><a href="#">신작게임</a></li>
+                        <li><img src="/images/icon/5.gif" alt="5위"><a href="#">yhsoft폭로</a></li>
+                        <li><img src="/images/icon/6.gif" alt="6위"><a href="#">스매시레전드</a></li>
+                        <li><img src="/images/icon/7.gif" alt="7위"><a href="#">하스스톤</a></li>
+                        <li><img src="/images/icon/8.gif" alt="8위"><a href="#">프론트엔드</a></li>
+                        <li><img src="/images/icon/9.gif" alt="9위"><a href="#">양덕동 맛집</a></li>
+                        <li><img src="/images/icon/10.gif" alt="10위"><a href="#">키보드추천</a></li>
+                    </ul>
+                </li>                     
+            </ul>
+            <a href="#" class="mobile_logo"><img src="/images/main_logo.png" alt="Wayout" width="200"></a>
+            <i class="fas fa-bars all_list"></i> 
+        </div>
+        <div class="mobile_container">
+            <ul class="mobile_menu">
+                <li>
+                    <a href="#"><i class="fas fa-power-off"></i>로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">ID/PW 찾기</a>
+                    <form action="#" name="search_form" method="get">
+                        <fieldset>
+                            <legend class="skip">검색</legend>
+                            <label for="search_box_mobile" class="skip">검색어 입력</label>                        
+                            <input type="text" id="search_box_mobile" class="search_box_mobile" maxlength="18">
+                            <button class="search_btn"><i class="fas fa-search"></i></button>
+                        </fieldset>
+                    </form>
+                </li>
+                <li>
+                    <h2><a href="#" class="mm">게임소식</a></h2>
+                    <ul class="sub_menu">
+                        <li><a href="#">PC</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Xbox</a></li>
+                        <li><a href="#">PlayStation</a></li>
+                        <li><a href="#">SWITCH</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="#" class="mm">리뷰/공략</a></h2>
+                    <ul class="sub_menu">
+                        <li><a href="#">리뷰게시판</a></li>
+                        <li><a href="#">공략게시판</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="#">뉴스</a></h2>
+                    <ul class="sub_menu">
+                        <li><a href="#">뉴스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="#" class="mm">커뮤니티</a></h2>
+                    <ul class="sub_menu">                                
+                        <li><a href="#">유머게시판</a></li>
+                        <li><a href="#">자유게시판</a></li>
+                        <li><a href="#">장터게시판</a></li>
+                        <li><a href="#">취미게시판</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="#" class="mm">이벤트</a></h2>
+                    <ul class="sub_menu">                                
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">종료된 이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="#" class="mm">고객문의</a></h2>
+                    <ul class="sub_menu">                                
+                        <li><a href="#">제휴문의</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">광고안내</a></li>
+                    </ul>
+                </li>
+                <li class="all_list_close">
+                    <a href="#" onclick="return false"><span>전체메뉴 닫기 </span><i class="fas fa-times"></i></a>
+                </li>                    
+            </ul> 
+        </div>                  
+    </nav>
+    <!--메인 메뉴-->
+
+    <div class="middle_banner"><a href="#"><img src="/images/ad_banner/header_banner_2.jpg" alt="리니지2"></a></div>
+
+    <div id="bg_wrapper">
+        <section id="register_container">
+            <h2>회원가입</h2>
+            <form action="#" id="regForm" method="POST">
+                <fieldset>
+                    <div class="service_agree">
+                        <h3>웨이아웃 서비스 이용약관</h3>
+                        <textarea name="serviceAgree1" id="serviceAgree1" cols="100" rows="20" readonly="readonly">
+제 1조 (목적)
+
+본 약관은 서비스 이용자가 주식회사 (이하 “회사”라 합니다)이 제공하는 온라인상의 인터넷 서비스 게임메카(이하 “서비스”라고 하며, 접속 가능한 유•무선 단말기의 종류와는 상관없이 이용 가능한 “회사”가 제공하는 모든 “서비스”를 의미합니다. 이하 같습니다)의 회원으로 가입하고 이를 이용함에 있어 회사와 회원(본 약관에 동의하고 회원등록을 완료한 서비스 이용자를 말합니다. 이하 “회원”이라고 합니다)의 권리•의무 및 책임사항을 규정함을 목적으로 합니다.
+
+
+제 2 조 (정의)
+
+이 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+1. "아이디(ID)"라 함은 "회원"의 식별과 "서비스" 이용을 위하여 "회원"이 정하고 "회사"가 승인하는 문자와 숫자의 조합을 의미합니다.
+2. "비밀번호"라 함은 "회원"이 부여 받은 "아이디와 일치되는 "회원"임을 확인하고 비밀보호를 위해 "회원" 자신이 정한 문자 또는 숫자의 조합을 의미합니다.
+3. "유료서비스"라 함은 "회사"가 유료로 제공하는 각종 온라인디지털콘텐츠(각종 정보콘텐츠, VOD, 아이템 기타 유료콘텐츠를 포함) 및 제반 서비스를 의미합니다.
+4. "포인트"라 함은 서비스의 효율적 이용을 위해 회사가 임의로 책정 또는 지급, 조정할 수 있는 재산적 가치가 없는 "서비스" 상의 가상 데이터를 의미합니다.
+5. "게시물"이라 함은 "회원"이 "서비스"를 이용함에 있어 "서비스상"에 게시한 부호ㆍ문자ㆍ음성ㆍ음향ㆍ화상ㆍ동영상 등의 정보 형태의 글, 사진, 동영상 및 각종 파일과 링크 등을 의미합니다.
+
+
+제 3 조 (약관의 게시와 개정)
+
+1. "회사"는 이 약관의 내용을 "회원"이 쉽게 알 수 있도록 서비스 초기 화면에 게시합니다.
+2. "회사"는 "약관의규제에관한법률", "정보통신망이용촉진및정보보호등에관한법률(이하 "정보통신망법")" 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.
+3. "회사"가 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 제1항의 방식에 따라 그 개정약관의 적용일자 30일 전부터 적용일자 전일까지 공지합니다. 다만, 회원에게 불리한 약관의 개정의 경우에는 공지 외에 일정기간 서비스내 전자우편, 로그인시 동의창 등의 전자적 수단을 통해 따로 명확히 통지하도록 합니다.
+4. 회사가 전항에 따라 개정약관을 공지 또는 통지하면서 회원에게 30일 기간 내에 의사표시를 하지 않으면 의사표시가 표명된 것으로 본다는 뜻을 명확하게 공지 또는 통지하였음 에도 회원이 명시적으로 거부의 의사표시를 하지 아니한 경우 회원이 개정약관에 동의한 것으로 봅니다.
+5. 회원이 개정약관의 적용에 동의하지 않는 경우 회사는 개정 약관의 내용을 적용할 수 없으며, 이 경우 회원은 이용계약을 해지할 수 있습니다. 다만, 기존 약관을 적용할 수 없는 특별한 사정이 있는 경우에는 회사는 이용계약을 해지할 수 있습니다.
+
+
+제 4 조 (약관의 해석)
+
+1. "회사"는 "유료서비스" 및 개별 서비스에 대해서는 별도의 이용약관 및 정책(이하 "유료서비스약관 등")을 둘 수 있으며, 해당 내용이 이 약관과 상충할 경우에는 "유료서비스약관 등"이 우선하여 적용됩니다.
+2. 이 약관에서 정하지 아니한 사항이나 해석에 대해서는 "유료서비스약관 등" 및 관계법령 또는 상관례에 따릅니다.
+                        </textarea>
+                        <p>개인정보 수집 이용에 동의합니다. (필수) <input type="checkbox" class="agree"></p>
+                    </div>
+                    <h3>정보 입력</h3>
+                    <table class="reg_info_1">
+                            <tr>
+                                <td><label for="name"><span>이름 :</span></label></td>
+                                <td><input type="text" placeholder="이름을 입력해주세요" required id="name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="gender">성별 : </label></td>
+                                <td>
+                                    남성 <input type="radio" name="sex" checked>
+                                    여성 <input type="radio" name="sex">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="tel">전화번호 : </label></td> 
+                                <td>
+                                    <select name="tel1" id="tel">
+                                        <option value="02">02</option>
+                                        <option value="02">055</option>
+                                        <option value="02">010</option>
+                                    </select>
+                                    <input type="text" pattern="\d{3,4}" required>
+                                    <input type ="text" pattern="\d{4}" required>
+                                    <button>인증번호 전송</button>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td><label for="telcon"></label> 인증번호 : </td>
+                                <td>
+                                    <input type="text" placeholder="6자리 인증번호" id="telcon" required maxlength="6">
+                                    <button>인증</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">이메일 : </label></td>
+                                <td>
+                                    <input type="text" required>@ 
+                                    <select name="emailAddr" id="emailAddr">
+                                        <option value="naver">naver.com</option>
+                                        <option value="google">gmail.com</option>
+                                        <option value="daum">hanmail.net</option>
+                                        <option value="nate">nate.com</option>
+                                    </select>   
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">마케팅 정보 제공 수신 동의 (선택) <input type="checkbox" required class="marketingAgree"></td>
+                            </tr>        
+                    </table>
+                    <table class="reg_info_2">
+                            <tr>
+                                <td><label for="id">아이디 : </label></td>
+                                <td>
+                                    <input type="text" placeholder="4~15자리의 영문과 숫자 조합" id="id" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="pw1">비밀번호 : </label></td>
+                                <td>
+                                    <input type="password" placeholder="영문, 숫자, 특수문자 포함 8자리 이상" id="pw1" required>
+                                </td>
+                            </tr>   
+                            <tr>
+                                <td><label for="pw2">비밀번호 확인 : </label></td>
+                                <td>
+                                    <input type="password" placeholder="비밀번호를 한번 더 입력해주세요" id="pw2" required onchange="pwCheck()">
+                                    <span class="pwOk"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="nickname">닉네임 : </label></td>
+                                <td>
+                                    <input type="text" placeholder="사용하실 닉네임을 입력해주세요" id="nickname" required>
+                                </td>
+                            </tr>
+                    </table>
+                    <div class="submit_cancel">
+                        <input type="submit" value="가입">
+                        <button class="cancel">취소</button>
+                    </div>
+                </fieldset>  
+            </form>
+        </section>
+    </div>
+
+    <!--후터 시작-->
+    <footer class="section">
+        <div class="footer_top">
+            <div class="footer_top_container">
+                <ul>
+                    <li><span>대한민국 최고 게임 커뮤니티::Wayout</span></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">인터넷광고·제휴문의</a></li>
+                    <li><a href="#">사이트관련문의</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">홈페이지이용약관</a></li>   
+                </ul>
+            </div>            
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom_container">
+                <ul>
+                    <li>사업자등록번호 : 000-00-00000</li>
+                    <li>웨이아웃 대표 : 여현슥</li>
+                    <li>TEL : 0000-0000</li>
+                    <li>개인정보 책임자 : 여현식</li>
+                </ul>
+                <p class="footer_logo"><img src="/images/footer_logo.png" alt="Wayout" width="260"></p>
+                <!--모바일에만 보일 후터 로고-->
+                <p class="copyright">Copyright&copy;2021 All Rights Reserved by Wayout</p>
+            </div>            
+        </div>
+    </footer>
+    <!--후터 끝-->
+
+    <aside class="left_banner">
+        <a href="#"><img src="/images/ad_banner/side_banner_2.jpg" alt="보스레이브" width="300"></a>
+    </aside>
+    <!--왼쪽 광고 배너-->
+
+    <aside class="right_menu">
+        <div class="hot_post">
+            <ul class="hot_post_list">
+                <li><img src="/images/icon/hot_post.png" alt="Hot"><h2>Hot 유저 게시글</h2><a href="#" class="more">more+</a></li>
+                <li><span>[자유]</span><a href="#">키우던 달팽이가 죽었어요</a><span>[11]</span></li>
+                <li><span>[유머]</span><a href="#">동물에게 공포감을 주는 포즈.jpg</a><span>[5]</span></li>
+                <li><span>[자유]</span><a href="#">리니지2 각성섭 데나 업데이트 됐다</a><span>[7]</span></li>
+                <li><span>[자유]</span><a href="#">(추가글) yhsoft 다녔던 사람입니다.</a><span>[102]</span></li>
+                <li><span>[취미]</span><a href="#">반죽없이 간단한 호떡만들기!</a><span>[6]</span></li>
+                <li><span>[자유]</span><a href="#">근데 여현석이 누구예요?</a><span>[1]</span></li>
+                <li><span>[자유]</span><a href="#">디아블로 캐릭터 추천 좀 해주세요</a><span>[4]</span></li>
+                <li><span>[자유]</span><a href="#">1시간만에 여자친구와 헤어졌습니다..</a><span>[65]</span></li>
+                <li><span>[링크]</span><a href="#">메인메뉴의 뉴스를 눌러주세요</a><span>[2]</span></li>
+                <li><span>[취미]</span><a href="#">13년째 키우고 있는 선인장 근황 사진</a><span>[8]</span></li>
+            </ul>
+        </div>
+        <div class="right_banner">
+            <a href="#"><img src="/images/ad_banner/side_banner_1.jpg" alt="카트라이더 러쉬" width="300"></a>
+        </div>
+        
+    </aside>
+    <!--오른쪽 사이드 메뉴-->
+
+    <script src="js/register.js"></script>
+</body>
+</html>

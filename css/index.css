@@ -613,7 +613,7 @@ gray-color -> rgb(77, 77, 77)
     #gnb .gnb_container {width: 95%; margin: 0 auto; position: relative;}
     #gnb .gnb_container .main_menu {display: none;}
     #gnb .gnb_container .all_list {font-size: 35px; position: absolute; top: -5px; left: 88%;padding: 8px; border-radius: 4px; cursor: pointer;}
-    #gnb .mobile_container {position: absolute; top: 61px; left: 0; background-color: rgb(221, 229, 255); width: 100%; border: 2px solid rgb(72, 74, 182);}
+    #gnb .mobile_container {position: absolute; top: 11.5vw; left: 0; background-color: rgb(221, 229, 255); width: 100%;}
     #gnb .mobile_container .mobile_menu {display: none;}
     #gnb .mobile_container .mobile_menu>li::after {content: ""; display: block; clear: both;}
     #gnb .mobile_container .mobile_menu>li {white-space: nowrap; border-bottom: 1px solid rgb(179, 179, 179);}

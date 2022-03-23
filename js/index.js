@@ -155,41 +155,6 @@ $(document).ready(function(){
         $(".article_con_3").css("display","flex");
     });
     // 뉴스 탭 제어
-
-
-    /*window.open("pop_up.html","KartRiderRush","width=400px , height=289px , scrollbars=no , toolbar=no , location=no, left=70px, top=90px");*/
-    // 팝업창 
-
-    /*window.addEventListener("wheel", function(e){
-        e.preventDefault();
-    },{passive : false});
-
-    var $html = $("html");
- 
-    var page = 1;
- 
-    var lastPage = $(".section").length;
- 
-    $html.animate({scrollTop:0},10);
-
-    $(window).on("wheel", function(e){
- 
-        if($html.is(":animated")) return;
-     
-        if(e.originalEvent.deltaY > 0){
-            if(page== lastPage) return;
-     
-            page++;
-        }else if(e.originalEvent.deltaY < 0){
-            if(page == 1) return;
-     
-            page--;
-        }
-        var posTop = (page-1) * 500
-     
-       $html.animate({scrollTop : posTop});
-     
-    });*/
 });
 
 

@@ -22,7 +22,7 @@ gray-color -> rgb(77, 77, 77)
 /*pc 화면 시작*/
 @media (min-width:1024px){
     header .header_banner {height: 60px; position: relative;}
-    header .header_banner .header_banner_image {height: 100%; display: block; background-image: url(/images/ad_banner/header_banner_2.jpg);}
+    header .header_banner .header_banner_image {height: 100%; display: block; background-image: url(../images/ad_banner/header_banner_2.jpg);}
     header .header_banner .banner_close {position: absolute; top: 40px; right: 0; background-color: rgb(0, 0, 0); color: white;}
     header .header_banner .banner_close>i {color: rgb(219, 219, 219); font-size: 16px;}
     /*최상단 광고 배너*/

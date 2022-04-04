@@ -1,770 +1,1290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="hyeonseok">
-    <meta name="keyword" content="Wayout">
-    <meta name="description" content="portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="hyeonseok" />
+    <meta name="keyword" content="Wayout" />
+    <meta name="description" content="portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>대한민국 최고 게임 커뮤니티::Wayout</title>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/slide.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
     <!--헤더 시작-->
     <header class="section">
-        <div class="header_banner">
-            <a href="#" class="header_banner_image"></a>
-            <a href="#" class="banner_close" onclick="preventClick(event)"><i class="far fa-window-close"></i></a>
-        </div>
-        <div class="sns_util">
-            <ul class="sns">
-                <li><a href="#"><i class="fab fa-facebook-square"></i>Facebook</a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i>Youtube</a></li>
-                <li><a href="#"><i class="fab fa-blogger"></i>Blog</a></li>
-                <li><a href="#"><i class="fab fa-twitter-square"></i>Twitter</a></li>
-            </ul>
-            <!--상단 메뉴(sns링크들)-->
-            <ul class="util">
-                <li><a href="#">로그인</a></li>
-                <li><a href="./register.html">회원가입</a></li>
-                <li><a href="#">ID/PW 찾기</a></li>
-                <li><a href="#">마이페이지</a></li>
-                <li><a href="#">고객문의</a></li>
-            </ul>
-            <!--상단 메뉴(로그인, 회원가입 등등)-->
-        </div>
-        <!--최상단 광고 배너-->
-        <div class="logo_search">
-            <h1 class="logo"><a href="./index.html"><img src="./images/main_logo.png" alt="Wayout" width="230"></a></h1>
-            <!--로고-->
-            <form action="#" name="search_form" method="get">
-                <fieldset>
-                    <legend class="skip">검색</legend>
-                    <label for="search_box" class="skip">검색어 입력</label>                        
-                    <input type="text" id="search_box" class="search_box" maxlength="18">
-                    <button class="search_btn"><i class="fas fa-search"></i></button>
-                </fieldset>
-            </form>
-            <!--검색 박스-->
-        </div>
-        <!--로고, 상단메뉴, 검색, sns-->
+      <div class="header_banner">
+        <a href="#" class="header_banner_image"></a>
+        <a href="#" class="banner_close" onclick="preventClick(event)"
+          ><i class="far fa-window-close"></i
+        ></a>
+      </div>
+      <div class="sns_util">
+        <ul class="sns">
+          <li>
+            <a href="#"><i class="fab fa-facebook-square"></i>Facebook</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-youtube"></i>Youtube</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-blogger"></i>Blog</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
+          </li>
+        </ul>
+        <!--상단 메뉴(sns링크들)-->
+        <ul class="util">
+          <li><a href="#">로그인</a></li>
+          <li><a href="./register.html">회원가입</a></li>
+          <li><a href="#">ID/PW 찾기</a></li>
+          <li><a href="#">마이페이지</a></li>
+          <li><a href="#">고객문의</a></li>
+        </ul>
+        <!--상단 메뉴(로그인, 회원가입 등등)-->
+      </div>
+      <!--최상단 광고 배너-->
+      <div class="logo_search">
+        <h1 class="logo">
+          <a href="./index.html"
+            ><img src="./images/main_logo.png" alt="Wayout" width="230"
+          /></a>
+        </h1>
+        <!--로고-->
+        <form action="#" name="search_form" method="get">
+          <fieldset>
+            <legend class="skip">검색</legend>
+            <label for="search_box" class="skip">검색어 입력</label>
+            <input
+              type="text"
+              id="search_box"
+              class="search_box"
+              maxlength="18"
+            />
+            <button class="search_btn"><i class="fas fa-search"></i></button>
+          </fieldset>
+        </form>
+        <!--검색 박스-->
+      </div>
+      <!--로고, 상단메뉴, 검색, sns-->
     </header>
-     <!--헤더 끝-->
+    <!--헤더 끝-->
 
     <nav id="gnb" class="section">
-        <div class="gnb_container">
-            <h2 class="skip">메인메뉴</h2>
-            <ul class="main_menu">
-                <li>
-                    <h2><a href="#" class="mm">게임소식</a></h2>
-                    <ul class="sub_menu">
-                        <li><a href="#">PC</a></li>
-                        <li><a href="#">Mobile</a></li>
-                        <li><a href="#">Xbox</a></li>
-                        <li><a href="#">PlayStation</a></li>
-                        <li><a href="#">SWITCH</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="#" class="mm">리뷰/공략</a></h2>
-                    <ul class="sub_menu">
-                        <li><a href="#">리뷰게시판</a></li>
-                        <li><a href="#">공략게시판</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="#">뉴스</a></h2>
-                </li>
-                <li>
-                    <h2><a href="#" class="mm">커뮤니티</a></h2>
-                    <ul class="sub_menu">                                
-                        <li><a href="#">유머게시판</a></li>
-                        <li><a href="#">자유게시판</a></li>
-                        <li><a href="#">장터게시판</a></li>
-                        <li><a href="#">취미게시판</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="#" class="mm">이벤트</a></h2>
-                    <ul class="sub_menu">                                
-                        <li><a href="#">진행중인 이벤트</a></li>
-                        <li><a href="#">종료된 이벤트</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="#" class="mm">고객문의</a></h2>
-                    <ul class="sub_menu">                                
-                        <li><a href="#">제휴문의</a></li>
-                        <li><a href="#">고객센터</a></li>
-                        <li><a href="#">광고안내</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="hot_search_bar">
-                        <span>인기 검색어</span>
-                        <ul>
-                            <li><img src="./images/icon/1.gif" alt="1위"><a href="#">김갑생할머니김</a></li>
-                            <li><img src="./images/icon/2.gif" alt="2위"><a href="#">yhsoft</a></li>
-                            <li><img src="./images/icon/3.gif" alt="3위"><a href="#">어쩔티비</a></li>
-                            <li><img src="./images/icon/4.gif" alt="4위"><a href="#">신작게임</a></li>
-                            <li><img src="./images/icon/5.gif" alt="5위"><a href="#">yhsoft폭로</a></li>
-                            <li><img src="./images/icon/6.gif" alt="6위"><a href="#">스매시레전드</a></li>
-                            <li><img src="./images/icon/7.gif" alt="7위"><a href="#">하스스톤</a></li>
-                            <li><img src="./images/icon/8.gif" alt="8위"><a href="#">프론트엔드</a></li>
-                            <li><img src="./images/icon/9.gif" alt="9위"><a href="#">창원 맛집</a></li>
-                            <li><img src="./images/icon/10.gif" alt="10위"><a href="#">키보드추천</a></li>
-                        </ul>                            
-                    </div>
-                </li>
-                <li>
-                    <ul class="hot_search_all">
-                        <li><span>실시간 인기 검색어</span></li>
-                        <li><img src="./images/icon/1.gif" alt="1위"><a href="#">김갑생할머니김</a></li>
-                        <li><img src="./images/icon/2.gif" alt="2위"><a href="#">yhsoft</a></li>
-                        <li><img src="./images/icon/3.gif" alt="3위"><a href="#">어쩔티비</a></li>
-                        <li><img src="./images/icon/4.gif" alt="4위"><a href="#">신작게임</a></li>
-                        <li><img src="./images/icon/5.gif" alt="5위"><a href="#">yhsoft폭로</a></li>
-                        <li><img src="./images/icon/6.gif" alt="6위"><a href="#">스매시레전드</a></li>
-                        <li><img src="./images/icon/7.gif" alt="7위"><a href="#">하스스톤</a></li>
-                        <li><img src="./images/icon/8.gif" alt="8위"><a href="#">프론트엔드</a></li>
-                        <li><img src="./images/icon/9.gif" alt="9위"><a href="#">창원 맛집</a></li>
-                        <li><img src="./images/icon/10.gif" alt="10위"><a href="#">키보드추천</a></li>
-                    </ul>
-                </li>                     
+      <div class="gnb_container">
+        <h2 class="skip">메인메뉴</h2>
+        <ul class="main_menu">
+          <li>
+            <h2><a href="#" class="mm">게임소식</a></h2>
+            <ul class="sub_menu">
+              <li><a href="#">PC</a></li>
+              <li><a href="#">Mobile</a></li>
+              <li><a href="#">Xbox</a></li>
+              <li><a href="#">PlayStation</a></li>
+              <li><a href="#">SWITCH</a></li>
             </ul>
-            <a href="#" class="mobile_logo"><img src="./images/main_logo.png" alt="Wayout" width="200"></a>
-            <i class="fas fa-bars all_list"></i> 
-        </div>
-        <div class="mobile_container">
-            <ul class="mobile_menu">
+          </li>
+          <li>
+            <h2><a href="#" class="mm">리뷰/공략</a></h2>
+            <ul class="sub_menu">
+              <li><a href="#">리뷰게시판</a></li>
+              <li><a href="#">공략게시판</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2><a href="#">뉴스</a></h2>
+          </li>
+          <li>
+            <h2><a href="#" class="mm">커뮤니티</a></h2>
+            <ul class="sub_menu">
+              <li><a href="#">유머게시판</a></li>
+              <li><a href="#">자유게시판</a></li>
+              <li><a href="#">장터게시판</a></li>
+              <li><a href="#">취미게시판</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2><a href="#" class="mm">이벤트</a></h2>
+            <ul class="sub_menu">
+              <li><a href="#">진행중인 이벤트</a></li>
+              <li><a href="#">종료된 이벤트</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2><a href="#" class="mm">고객문의</a></h2>
+            <ul class="sub_menu">
+              <li><a href="#">제휴문의</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">광고안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="hot_search_bar">
+              <span>인기 검색어</span>
+              <ul>
                 <li>
-                    <a href="#"><i class="fas fa-power-off"></i>로그인</a>
-                    <a href="./register.html">회원가입</a>
-                    <a href="#">ID/PW 찾기</a>
-                    <form action="#" name="search_form" method="get">
-                        <fieldset>
-                            <legend class="skip">검색</legend>
-                            <label for="search_box_mobile" class="skip">검색어 입력</label>                        
-                            <input type="text" id="search_box_mobile" class="search_box_mobile" maxlength="18">
-                            <button class="search_btn"><i class="fas fa-search"></i></button>
-                        </fieldset>
-                    </form>
+                  <img src="./images/icon/1.gif" alt="1위" /><a href="#"
+                    >김갑생할머니김</a
+                  >
                 </li>
                 <li>
-                    <h2><a href="#" class="mm">게임소식</a></h2>
-                    <ul class="sub_menu">
-                        <li><a href="#">PC</a></li>
-                        <li><a href="#">Mobile</a></li>
-                        <li><a href="#">Xbox</a></li>
-                        <li><a href="#">PlayStation</a></li>
-                        <li><a href="#">SWITCH</a></li>
-                    </ul>
+                  <img src="./images/icon/2.gif" alt="2위" /><a href="#"
+                    >yhsoft</a
+                  >
                 </li>
                 <li>
-                    <h2><a href="#" class="mm">리뷰/공략</a></h2>
-                    <ul class="sub_menu">
-                        <li><a href="#">리뷰게시판</a></li>
-                        <li><a href="#">공략게시판</a></li>
-                    </ul>
+                  <img src="./images/icon/3.gif" alt="3위" /><a href="#"
+                    >어쩔티비</a
+                  >
                 </li>
                 <li>
-                    <h2><a href="#">뉴스</a></h2>
-                    <ul class="sub_menu">
-                        <li><a href="#">뉴스</a></li>
-                    </ul>
+                  <img src="./images/icon/4.gif" alt="4위" /><a href="#"
+                    >신작게임</a
+                  >
                 </li>
                 <li>
-                    <h2><a href="#" class="mm">커뮤니티</a></h2>
-                    <ul class="sub_menu">                                
-                        <li><a href="#">유머게시판</a></li>
-                        <li><a href="#">자유게시판</a></li>
-                        <li><a href="#">장터게시판</a></li>
-                        <li><a href="#">취미게시판</a></li>
-                    </ul>
+                  <img src="./images/icon/5.gif" alt="5위" /><a href="#"
+                    >yhsoft폭로</a
+                  >
                 </li>
                 <li>
-                    <h2><a href="#" class="mm">이벤트</a></h2>
-                    <ul class="sub_menu">                                
-                        <li><a href="#">진행중인 이벤트</a></li>
-                        <li><a href="#">종료된 이벤트</a></li>
-                    </ul>
+                  <img src="./images/icon/6.gif" alt="6위" /><a href="#"
+                    >스매시레전드</a
+                  >
                 </li>
                 <li>
-                    <h2><a href="#" class="mm">고객문의</a></h2>
-                    <ul class="sub_menu">                                
-                        <li><a href="#">제휴문의</a></li>
-                        <li><a href="#">고객센터</a></li>
-                        <li><a href="#">광고안내</a></li>
-                    </ul>
+                  <img src="./images/icon/7.gif" alt="7위" /><a href="#"
+                    >하스스톤</a
+                  >
                 </li>
-                <li class="all_list_close">
-                    <a href="#" onclick="preventClick(event)"><span>전체메뉴 닫기 </span><i class="fas fa-times"></i></a>
-                </li>                    
-            </ul> 
-        </div>                  
+                <li>
+                  <img src="./images/icon/8.gif" alt="8위" /><a href="#"
+                    >프론트엔드</a
+                  >
+                </li>
+                <li>
+                  <img src="./images/icon/9.gif" alt="9위" /><a href="#"
+                    >창원 맛집</a
+                  >
+                </li>
+                <li>
+                  <img src="./images/icon/10.gif" alt="10위" /><a href="#"
+                    >키보드추천</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <ul class="hot_search_all">
+              <li><span>실시간 인기 검색어</span></li>
+              <li>
+                <img src="./images/icon/1.gif" alt="1위" /><a href="#"
+                  >김갑생할머니김</a
+                >
+              </li>
+              <li>
+                <img src="./images/icon/2.gif" alt="2위" /><a href="#"
+                  >yhsoft</a
+                >
+              </li>
+              <li>
+                <img src="./images/icon/3.gif" alt="3위" /><a href="#"
+                  >어쩔티비</a
+                >
+              </li>
+              <li>
+                <img src="./images/icon/4.gif" alt="4위" /><a href="#"
+                  >신작게임</a
+                >
+              </li>
+              <li>
+                <img src="./images/icon/5.gif" alt="5위" /><a href="#"
+                  >yhsoft폭로</a
+                >
+              </li>
+              <li>
+                <img src="./images/icon/6.gif" alt="6위" /><a href="#"
+                  >스매시레전드</a
+                >
+              </li>
+              <li>
+                <img src="./images/icon/7.gif" alt="7위" /><a href="#"
+                  >하스스톤</a
+                >
+              </li>
+              <li>
+                <img src="./images/icon/8.gif" alt="8위" /><a href="#"
+                  >프론트엔드</a
+                >
+              </li>
+              <li>
+                <img src="./images/icon/9.gif" alt="9위" /><a href="#"
+                  >창원 맛집</a
+                >
+              </li>
+              <li>
+                <img src="./images/icon/10.gif" alt="10위" /><a href="#"
+                  >키보드추천</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <a href="#" class="mobile_logo"
+          ><img src="./images/main_logo.png" alt="Wayout" width="200"
+        /></a>
+        <i class="fas fa-bars all_list"></i>
+      </div>
+      <div class="mobile_container">
+        <ul class="mobile_menu">
+          <li>
+            <a href="#"><i class="fas fa-power-off"></i>로그인</a>
+            <a href="./register.html">회원가입</a>
+            <a href="#">ID/PW 찾기</a>
+            <form action="#" name="search_form" method="get">
+              <fieldset>
+                <legend class="skip">검색</legend>
+                <label for="search_box_mobile" class="skip">검색어 입력</label>
+                <input
+                  type="text"
+                  id="search_box_mobile"
+                  class="search_box_mobile"
+                  maxlength="18"
+                />
+                <button class="search_btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </fieldset>
+            </form>
+          </li>
+          <li>
+            <h2><a href="#" class="mm">게임소식</a></h2>
+            <ul class="sub_menu">
+              <li><a href="#">PC</a></li>
+              <li><a href="#">Mobile</a></li>
+              <li><a href="#">Xbox</a></li>
+              <li><a href="#">PlayStation</a></li>
+              <li><a href="#">SWITCH</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2><a href="#" class="mm">리뷰/공략</a></h2>
+            <ul class="sub_menu">
+              <li><a href="#">리뷰게시판</a></li>
+              <li><a href="#">공략게시판</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2><a href="#">뉴스</a></h2>
+            <ul class="sub_menu">
+              <li><a href="#">뉴스</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2><a href="#" class="mm">커뮤니티</a></h2>
+            <ul class="sub_menu">
+              <li><a href="#">유머게시판</a></li>
+              <li><a href="#">자유게시판</a></li>
+              <li><a href="#">장터게시판</a></li>
+              <li><a href="#">취미게시판</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2><a href="#" class="mm">이벤트</a></h2>
+            <ul class="sub_menu">
+              <li><a href="#">진행중인 이벤트</a></li>
+              <li><a href="#">종료된 이벤트</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2><a href="#" class="mm">고객문의</a></h2>
+            <ul class="sub_menu">
+              <li><a href="#">제휴문의</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">광고안내</a></li>
+            </ul>
+          </li>
+          <li class="all_list_close">
+            <a href="#" onclick="preventClick(event)"
+              ><span>전체메뉴 닫기 </span><i class="fas fa-times"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <!--메인 메뉴-->
 
     <!--전체 배경 wrapper 시작-->
     <div id="bg_wrapper">
-        <!--슬라이드 섹션 시작-->
-        <section id="section_first" class="section">
-            <div class="slide">
-                <div class="slide_container">
-                    <a href="#"><img src="./images/slide/slide_1.jpg" alt="제 2의 나라" width="800" class="slide_img"></a>
-                    
-                    <div class="slide_smr_1">
-                        <h2>[제 2의 나라] 6월 10일 정식 출시</h2>
-                        <p>
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                            도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                        </p>
-                        <div>
-                            <a href="#" class="more">more+</a>
-                        </div>                    
-                    </div>
-                    <div class="slide_smr_2">
-                        <h2>[하스스톤] 신규 확장팩 '불모의 땅' 출시</h2>
-                        <p>
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                            도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                        </p>
-                        <div>
-                            <a href="#" class="more">more+</a>
-                        </div>                    
-                    </div>
-                    <div class="slide_smr_3">
-                        <h2>[바이오 뮤턴트] 플레이 영상 공개</h2>
-                        <p>
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                            도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                        </p>
-                        <div>
-                            <a href="#" class="more">more+</a>
-                        </div>                    
-                    </div>
-                    <div class="slide_smr_4">
-                        <h2>[스매시 레전드] 밸런스 이대로 괜찮은가</h2>
-                        <p>
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                            도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                        </p>
-                        <div>
-                            <a href="#" class="more">more+</a>
-                        </div>                    
-                    </div>
-                    <div class="slide_smr_5">
-                        <h2>정체불명의 기업 'YHsoft' 게임 사업에 뛰어들다.</h2>
-                        <p>
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                            도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                        </p>
-                        <div>
-                            <a href="#" class="more">more+</a>
-                        </div>                    
-                    </div>
-                    <p class="slide_btn">
-                        <a href="#" onclick="preventClick(event)" class="prev_btn"><i class="fas fa-chevron-left"></i></a>
-                        <a href="#" onclick="preventClick(event)" class="next_btn"><i class="fas fa-chevron-right"></i></a>
-                    </p>
-                    <p class="slide_bullet">
-                        <a href="#" class="bullet bullet_1"><img src="./images/icon/state_over.png" alt="슬라이드 표식"></a>
-                        <a href="#" class="bullet bullet_2"><img src="./images/icon/state_out.png" alt="슬라이드 표식"></a>
-                        <a href="#" class="bullet bullet_3"><img src="./images/icon/state_out.png" alt="슬라이드 표식"></a>
-                        <a href="#" class="bullet bullet_4"><img src="./images/icon/state_out.png" alt="슬라이드 표식"></a>
-                        <a href="#" class="bullet bullet_5"><img src="./images/icon/state_out.png" alt="슬라이드 표식"></a>
-                    </p>
-                </div>            
-                <div class="slide_selector">
-                    <ul class="slide_selector_list">
-                        <li><span>'제 2의 나라' 정식 출시</span></li>
-                        <li><span>'하스스톤' 신규 업데이트</span></li>
-                        <li><span>'바이오 뮤턴트' 첫 공개</span></li>
-                        <li><span>'스매시 레전드' 이대로 괜찮은가</span></li>
-                        <li><span>YHsoft가 게임 사업을?</span></li>
-                    </ul>
-                </div>
-                <div class="hot_post">
-                    <ul class="hot_post_list">
-                        <li><img src="./images/icon/hot_post.png" alt="Hot"><h2>Hot 유저 게시글</h2></li>
-                        <li><span>[자유]</span><a href="#">키우던 달팽이가 죽었어요</a><span>[11]</span></li>
-                        <li><span>[유머]</span><a href="#">동물에게 공포감을 주는 포즈.jpg</a><span>[5]</span></li>
-                        <li><span>[자유]</span><a href="#">리니지2 각성섭 데나 업데이트 됐다</a><span>[7]</span></li>
-                        <li><span>[자유]</span><a href="#">(추가글) yhsoft 다녔던 사람입니다.</a><span>[102]</span></li>
-                        <li><span>[취미]</span><a href="#">반죽없이 간단한 호떡만들기!</a><span>[6]</span></li>
-                        <li><span>[자유]</span><a href="#">근데 여현석이 누구예요?</a><span>[1]</span></li>
-                        <li><span>[자유]</span><a href="#">디아블로 캐릭터 추천 좀 해주세요</a><span>[4]</span></li>
-                        <li><span>[자유]</span><a href="#">1시간만에 여자친구와 헤어졌습니다..</a><span>[65]</span></li>
-                        <li><span>[링크]</span><a href="#">회원가입을 눌러주세요</a><span>[2]</span></li>
-                        <li><span>[취미]</span><a href="#">13년째 키우고 있는 선인장 근황 사진</a><span>[8]</span></li>
-                    </ul>
-                    <a href="#" class="more">more+</a>
-                </div>
-                <!--화면 줄어들 때 나타날 인기 게시글-->
-            </div>
-        </section>
-        <!--슬라이드 섹션 끝-->
+      <!--슬라이드 섹션 시작-->
+      <section id="section_first" class="section">
+        <div class="slide">
+          <div class="slide_container">
+            <a href="#"
+              ><img
+                src="./images/slide/slide_1.jpg"
+                alt="제 2의 나라"
+                width="800"
+                class="slide_img"
+            /></a>
 
-        <div class="middle_banner"><a href="#"><img src="./images/ad_banner/header_banner_2.jpg" alt="리니지2"></a></div>
-        <!-- 슬라이드 아래 배너 -->
+            <div class="slide_smr_1">
+              <h2>[제 2의 나라] 6월 10일 정식 출시</h2>
+              <p>
+                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                이름과 노루, 잔디가 나는 별에도 했던 봅니다. 도 청춘이
+                까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
+              </p>
+              <div>
+                <a href="#" class="more">more+</a>
+              </div>
+            </div>
+            <div class="slide_smr_2">
+              <h2>[하스스톤] 신규 확장팩 '불모의 땅' 출시</h2>
+              <p>
+                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                이름과 노루, 잔디가 나는 별에도 했던 봅니다. 도 청춘이
+                까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
+              </p>
+              <div>
+                <a href="#" class="more">more+</a>
+              </div>
+            </div>
+            <div class="slide_smr_3">
+              <h2>[바이오 뮤턴트] 플레이 영상 공개</h2>
+              <p>
+                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                이름과 노루, 잔디가 나는 별에도 했던 봅니다. 도 청춘이
+                까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
+              </p>
+              <div>
+                <a href="#" class="more">more+</a>
+              </div>
+            </div>
+            <div class="slide_smr_4">
+              <h2>[스매시 레전드] 밸런스 이대로 괜찮은가</h2>
+              <p>
+                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                이름과 노루, 잔디가 나는 별에도 했던 봅니다. 도 청춘이
+                까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
+              </p>
+              <div>
+                <a href="#" class="more">more+</a>
+              </div>
+            </div>
+            <div class="slide_smr_5">
+              <h2>정체불명의 기업 'YHsoft' 게임 사업에 뛰어들다.</h2>
+              <p>
+                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                이름과 노루, 잔디가 나는 별에도 했던 봅니다. 도 청춘이
+                까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
+              </p>
+              <div>
+                <a href="#" class="more">more+</a>
+              </div>
+            </div>
+            <p class="slide_btn">
+              <a href="#" onclick="preventClick(event)" class="prev_btn"
+                ><i class="fas fa-chevron-left"></i
+              ></a>
+              <a href="#" onclick="preventClick(event)" class="next_btn"
+                ><i class="fas fa-chevron-right"></i
+              ></a>
+            </p>
+            <p class="slide_bullet">
+              <a href="#" class="bullet bullet_1"
+                ><img src="./images/icon/state_over.png" alt="슬라이드 표식"
+              /></a>
+              <a href="#" class="bullet bullet_2"
+                ><img src="./images/icon/state_out.png" alt="슬라이드 표식"
+              /></a>
+              <a href="#" class="bullet bullet_3"
+                ><img src="./images/icon/state_out.png" alt="슬라이드 표식"
+              /></a>
+              <a href="#" class="bullet bullet_4"
+                ><img src="./images/icon/state_out.png" alt="슬라이드 표식"
+              /></a>
+              <a href="#" class="bullet bullet_5"
+                ><img src="./images/icon/state_out.png" alt="슬라이드 표식"
+              /></a>
+            </p>
+          </div>
+          <div class="slide_selector">
+            <ul class="slide_selector_list">
+              <li><span>'제 2의 나라' 정식 출시</span></li>
+              <li><span>'하스스톤' 신규 업데이트</span></li>
+              <li><span>'바이오 뮤턴트' 첫 공개</span></li>
+              <li><span>'스매시 레전드' 이대로 괜찮은가</span></li>
+              <li><span>YHsoft가 게임 사업을?</span></li>
+            </ul>
+          </div>
+          <div class="hot_post">
+            <ul class="hot_post_list">
+              <li>
+                <img src="./images/icon/hot_post.png" alt="Hot" />
+                <h2>Hot 유저 게시글</h2>
+              </li>
+              <li>
+                <span>[자유]</span><a href="#">키우던 달팽이가 죽었어요</a
+                ><span>[11]</span>
+              </li>
+              <li>
+                <span>[유머]</span
+                ><a href="#">동물에게 공포감을 주는 포즈.jpg</a><span>[5]</span>
+              </li>
+              <li>
+                <span>[자유]</span
+                ><a href="#">리니지2 각성섭 데나 업데이트 됐다</a
+                ><span>[7]</span>
+              </li>
+              <li>
+                <span>[자유]</span
+                ><a href="#">(추가글) yhsoft 다녔던 사람입니다.</a
+                ><span>[102]</span>
+              </li>
+              <li>
+                <span>[취미]</span><a href="#">반죽없이 간단한 호떡만들기!</a
+                ><span>[6]</span>
+              </li>
+              <li>
+                <span>[자유]</span><a href="#">근데 여현석이 누구예요?</a
+                ><span>[1]</span>
+              </li>
+              <li>
+                <span>[자유]</span
+                ><a href="#">디아블로 캐릭터 추천 좀 해주세요</a
+                ><span>[4]</span>
+              </li>
+              <li>
+                <span>[자유]</span
+                ><a href="#">1시간만에 여자친구와 헤어졌습니다..</a
+                ><span>[65]</span>
+              </li>
+              <li>
+                <span>[링크]</span><a href="#">회원가입을 눌러주세요</a
+                ><span>[2]</span>
+              </li>
+              <li>
+                <span>[취미]</span
+                ><a href="#">13년째 키우고 있는 선인장 근황 사진</a
+                ><span>[8]</span>
+              </li>
+            </ul>
+            <a href="#" class="more">more+</a>
+          </div>
+          <!--화면 줄어들 때 나타날 인기 게시글-->
+        </div>
+      </section>
+      <!--슬라이드 섹션 끝-->
 
-        <!--게임 소식-->
-        <section id="section_second" class="section">
-            <div class="news_bar">
-                <ul class="news_bar_list">
-                    <li><h3>게임 소식</h3></li>
-                    <li><span>PC</span></li>
-                    <li><span>Mobile</span></li>
-                    <li><span>Xbox</span></li>
-                    <li><span>PlayStation</span></li>
-                    <li><span>SWITCH</span></li>
-                </ul>
-            </div>
-            <div class="news_container news_con_1">
-                <div class="news_main">
-                    <a href="#"><img src="./images/pc_1.jpg" alt="m"></a>
-                    <div class="news_main_smr">
-                        <h2><a href="#"> '하스스톤' 신규 모드 업데이트</a></h2>
-                        <p class="smr"><a href="#">
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                            별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                        </a></p>
-                        <a href="#" class="news_more">more+</a>
-                    </div>
-                </div>
-                <div class="news_sub">
-                    <div class="news_sub_first">
-                        <a href="#"><img src="./images/pc_2.png" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'오버워치2' 언제 나올까?</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                    <div class="news_sub_second">
-                        <a href="#"><img src="./images/pc_3.jpg" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'피파온라인4' 사행성 논란</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                    <div class="news_sub_third">
-                        <a href="#"><img src="./images/pc_4.jpg" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'로스트아크' 대규모 업데이트</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="news_container news_con_2">
-                <div class="news_main">
-                    <a href="#"><img src="./images/mobile_1.jpg" alt="m"></a>
-                    <div class="news_main_smr">
-                        <h2><a href="#">'스매시 레전드' 밸런스 패치 3.2</a></h2>
-                        <p class="smr"><a href="#">
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                            별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                        </a></p>
-                        <a href="#" class="news_more">more+</a>
-                    </div>
-                </div>
-                <div class="news_sub">
-                    <div class="news_sub_first">
-                        <a href="#"><img src="./images/mobile_2.png" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'해리포터 호그와트의 미스테리'</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                    <div class="news_sub_second">
-                        <a href="#"><img src="./images/mobile_3.jpg" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'어몽어스' 스위치로 출시한다.</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                    <div class="news_sub_third">
-                        <a href="#"><img src="./images/mobile_4.jpg" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'포켓몬고' 페스티벌 시작</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="news_container news_con_3">
-                <div class="news_main">
-                    <a href="#"><img src="./images/xbox_1.jpg" alt="m"></a>
-                    <div class="news_main_smr">
-                        <h2><a href="#">'배틀필드' 신규 모드 업데이트</a></h2>
-                        <p class="smr"><a href="#">
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                            별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                        </a></p>
-                        <a href="#" class="news_more">more+</a>
-                    </div>
-                </div>
-                <div class="news_sub">
-                    <div class="news_sub_first">
-                        <a href="#"><img src="./images/xbox_2.jpg" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'헤일로' 리메이크 루머</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                    <div class="news_sub_second">
-                        <a href="#"><img src="./images/xbox_3.jpg" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'앨런웨이크' 95% 할인'</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                    <div class="news_sub_third">
-                        <a href="#"><img src="./images/xbox_4.jpg" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'어쌔신크리드3' 재밌을까?</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="news_container news_con_4">
-                <div class="news_main">
-                    <a href="#"><img src="./images/ps_1.jpg" alt="m"></a>
-                    <div class="news_main_smr">
-                        <h2><a href="#">GTA6 내년 출시 루머</a></h2>
-                        <p class="smr"><a href="#">
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                            별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                        </a></p>
-                        <a href="#" class="news_more">more+</a>
-                    </div>
-                </div>
-                <div class="news_sub">
-                    <div class="news_sub_first">
-                        <a href="#"><img src="./images/ps_2.jpg" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'스카이림' 새로운 dlc 발매</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                    <div class="news_sub_second">
-                        <a href="#"><img src="./images/ps_3.jpg" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'레드 데드 리뎀션' 90% 할인</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                    <div class="news_sub_third">
-                        <a href="#"><img src="./images/ps_4.jpg" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'언차티드4' 후속작 가능성?</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="news_container news_con_5">
-                <div class="news_main">
-                    <a href="#"><img src="./images/switch_1.jpg" alt="m"></a>
-                    <div class="news_main_smr">
-                        <h2><a href="#">'모여봐요 동물의 숲' 여름 업데이트</a></h2>
-                        <p class="smr"><a href="#">
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 
-                            가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                            별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                        </a></p>
-                        <a href="#" class="news_more">more+</a>
-                    </div>
-                </div>
-                <div class="news_sub">
-                    <div class="news_sub_first">
-                        <a href="#"><img src="./images/switch_2.jpg" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'미토피아' 2억장 판매 기록</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                    <div class="news_sub_second">
-                        <a href="#"><img src="./images/switch_3.jpg" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'슈퍼마리오' 성공 비결은?</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                    <div class="news_sub_third">
-                        <a href="#"><img src="./images/switch_4.jpg" alt="m"></a>
-                        <div class="news_sub_smr">
-                            <h3><a href="#">'저스트댄스' 진짜 춤만 춰야하나</a></h3>
-                            <p><a href="#">
-                                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다.
-                            </a></p>
-                            <a href="#" class="news_more">more+</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--게임 소식 끝-->
+      <div class="middle_banner">
+        <a href="#"
+          ><img src="./images/ad_banner/header_banner_2.jpg" alt="리니지2"
+        /></a>
+      </div>
+      <!-- 슬라이드 아래 배너 -->
 
-        <!--신작게임 preview-->
-        <section id="section_third" class="section">
-            <div class="preview_bar">
-                <h3>신작게임<span>PREVIEW</span></h3>
+      <!--게임 소식-->
+      <section id="section_second" class="section">
+        <div class="news_bar">
+          <ul class="news_bar_list">
+            <li><h3>게임 소식</h3></li>
+            <li><span>PC</span></li>
+            <li><span>Mobile</span></li>
+            <li><span>Xbox</span></li>
+            <li><span>PlayStation</span></li>
+            <li><span>SWITCH</span></li>
+          </ul>
+        </div>
+        <div class="news_container news_con_1">
+          <div class="news_main">
+            <a href="#"><img src="./images/pc_1.jpg" alt="m" /></a>
+            <div class="news_main_smr">
+              <h2><a href="#"> '하스스톤' 신규 모드 업데이트</a></h2>
+              <p class="smr">
+                <a href="#">
+                  가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                  언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과
+                  도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도
+                  했던 봅니다. 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                  언덕 이름과 도 청춘이 까닭입니다.
+                </a>
+              </p>
+              <a href="#" class="news_more">more+</a>
             </div>
-            <div class="preview_container">
-                <div class="preview_smr">
-                    <h2><a href="#">E3 2021 '젤다의 전설 야생의 숨결' 속편 트레일러 공개</a></h2>
-                    <p class="date"><strong>2021.06.18</strong></p>
-                    <p class="smr"><a href="#">
-                        가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 
-                        가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                        도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                        가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다.
-                    </a></p>
-                    <a href="#" class="news_more">more+</a>
-                </div>
-                <div class="preview_video">
-                    <iframe width="545" height="350" src="https://www.youtube.com/embed/Pi-MRZBP91I" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+          </div>
+          <div class="news_sub">
+            <div class="news_sub_first">
+              <a href="#"><img src="./images/pc_2.png" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'오버워치2' 언제 나올까?</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
             </div>
-        </section>
-        <!--신작게임 preview 끝-->
+            <div class="news_sub_second">
+              <a href="#"><img src="./images/pc_3.jpg" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'피파온라인4' 사행성 논란</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+            <div class="news_sub_third">
+              <a href="#"><img src="./images/pc_4.jpg" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'로스트아크' 대규모 업데이트</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news_container news_con_2">
+          <div class="news_main">
+            <a href="#"><img src="./images/mobile_1.jpg" alt="m" /></a>
+            <div class="news_main_smr">
+              <h2><a href="#">'스매시 레전드' 밸런스 패치 3.2</a></h2>
+              <p class="smr">
+                <a href="#">
+                  가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                  언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과
+                  도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도
+                  했던 봅니다. 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                  언덕 이름과 도 청춘이 까닭입니다.
+                </a>
+              </p>
+              <a href="#" class="news_more">more+</a>
+            </div>
+          </div>
+          <div class="news_sub">
+            <div class="news_sub_first">
+              <a href="#"><img src="./images/mobile_2.png" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'해리포터 호그와트의 미스테리'</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+            <div class="news_sub_second">
+              <a href="#"><img src="./images/mobile_3.jpg" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'어몽어스' 스위치로 출시한다.</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+            <div class="news_sub_third">
+              <a href="#"><img src="./images/mobile_4.jpg" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'포켓몬고' 페스티벌 시작</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news_container news_con_3">
+          <div class="news_main">
+            <a href="#"><img src="./images/xbox_1.jpg" alt="m" /></a>
+            <div class="news_main_smr">
+              <h2><a href="#">'배틀필드' 신규 모드 업데이트</a></h2>
+              <p class="smr">
+                <a href="#">
+                  가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                  언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과
+                  도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도
+                  했던 봅니다. 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                  언덕 이름과 도 청춘이 까닭입니다.
+                </a>
+              </p>
+              <a href="#" class="news_more">more+</a>
+            </div>
+          </div>
+          <div class="news_sub">
+            <div class="news_sub_first">
+              <a href="#"><img src="./images/xbox_2.jpg" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'헤일로' 리메이크 루머</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+            <div class="news_sub_second">
+              <a href="#"><img src="./images/xbox_3.jpg" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'앨런웨이크' 95% 할인'</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+            <div class="news_sub_third">
+              <a href="#"><img src="./images/xbox_4.jpg" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'어쌔신크리드3' 재밌을까?</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news_container news_con_4">
+          <div class="news_main">
+            <a href="#"><img src="./images/ps_1.jpg" alt="m" /></a>
+            <div class="news_main_smr">
+              <h2><a href="#">GTA6 내년 출시 루머</a></h2>
+              <p class="smr">
+                <a href="#">
+                  가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                  언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과
+                  도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도
+                  했던 봅니다. 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                  언덕 이름과 도 청춘이 까닭입니다.
+                </a>
+              </p>
+              <a href="#" class="news_more">more+</a>
+            </div>
+          </div>
+          <div class="news_sub">
+            <div class="news_sub_first">
+              <a href="#"><img src="./images/ps_2.jpg" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'스카이림' 새로운 dlc 발매</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+            <div class="news_sub_second">
+              <a href="#"><img src="./images/ps_3.jpg" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'레드 데드 리뎀션' 90% 할인</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+            <div class="news_sub_third">
+              <a href="#"><img src="./images/ps_4.jpg" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'언차티드4' 후속작 가능성?</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news_container news_con_5">
+          <div class="news_main">
+            <a href="#"><img src="./images/switch_1.jpg" alt="m" /></a>
+            <div class="news_main_smr">
+              <h2><a href="#">'모여봐요 동물의 숲' 여름 업데이트</a></h2>
+              <p class="smr">
+                <a href="#">
+                  가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                  언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과
+                  도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도
+                  했던 봅니다. 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                  언덕 이름과 도 청춘이 까닭입니다.
+                </a>
+              </p>
+              <a href="#" class="news_more">more+</a>
+            </div>
+          </div>
+          <div class="news_sub">
+            <div class="news_sub_first">
+              <a href="#"><img src="./images/switch_2.jpg" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'미토피아' 2억장 판매 기록</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+            <div class="news_sub_second">
+              <a href="#"><img src="./images/switch_3.jpg" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'슈퍼마리오' 성공 비결은?</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+            <div class="news_sub_third">
+              <a href="#"><img src="./images/switch_4.jpg" alt="m" /></a>
+              <div class="news_sub_smr">
+                <h3><a href="#">'저스트댄스' 진짜 춤만 춰야하나</a></h3>
+                <p>
+                  <a href="#">
+                    가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다.
+                    언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                    나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                    이름과 도 청춘이 까닭입니다.
+                  </a>
+                </p>
+                <a href="#" class="news_more">more+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--게임 소식 끝-->
 
-    `   <!--게임 순위-->
-        <section id="section_fourth" class="section">
-            <div class="ranking_bar">
-                <h3>실시간 게임 순위</h3>
-            </div>
-            <div class="ranking_container">
-                <div class="ranking_content_left">
-                    <h2>PC 게임</h2>
-                    <span class="rank_1">1위</span>
-                    <span class="score">유저 평점: 9.5</span>
-                    <ul class="ranking_list">
-                        <li><a href="#"><img src="./images/ranking/ranking_1.jpg" alt="1등 게임"></a></li>
-                        <li><span>2위</span><a href="#">리니지</a><span><i class="fas fa-star"></i>9.3</span></li>
-                        <li><span>3위</span><a href="#">메이플스토리</a><span><i class="fas fa-star"></i>9.1</span></li>
-                        <li><span>4위</span><a href="#">오버워치</a><span><i class="fas fa-star"></i>9.4</span></li>
-                        <li><span>5위</span><a href="#">캐치마인드</a><span><i class="fas fa-star"></i>8.7</span></li>
-                    </ul>
-                </div>
-                <div class="ranking_content_center">
-                    <h2>Video 게임</h2>
-                    <span class="rank_1">1위</span>
-                    <span class="score">유저 평점: 9.5</span>
-                    <ul class="ranking_list">
-                        <li><a href="#"><img src="./images/ranking/ranking_2.jpg" alt="1등 게임"></a></li>
-                        <li><span>2위</span><a href="#">바이오하자드</a><span><i class="fas fa-star"></i>9.3</span></li>
-                        <li><span>3위</span><a href="#">엘더스크롤 스카이림</a><span><i class="fas fa-star"></i>9.1</span></li>
-                        <li><span>4위</span><a href="#">GTA5</a><span><i class="fas fa-star"></i>9.4</span></li>
-                        <li><span>5위</span><a href="#">사이버펑크 2077</a><span><i class="fas fa-star"></i>8.7</span></li>
-                    </ul>
-                </div>
-                <div class="ranking_content_right">
-                    <h2>Mobile 게임</h2>
-                    <span class="rank_1">1위</span>
-                    <span class="score">유저 평점: 9.5</span>
-                    <ul class="ranking_list">
-                        <li><a href="#"><img src="./images/ranking/ranking_3.jpg" alt="1등 게임"></a></li>
-                        <li><span>2위</span><a href="#">모두의 마블</a><span><i class="fas fa-star"></i>9.3</span></li>
-                        <li><span>3위</span><a href="#">쿠키런 킹덤</a><span><i class="fas fa-star"></i>9.1</span></li>
-                        <li><span>4위</span><a href="#">애니팡</a><span><i class="fas fa-star"></i>9.4</span></li>
-                        <li><span>5위</span><a href="#">포켓몬고</a><span><i class="fas fa-star"></i>8.7</span></li>
-                    </ul>
-                </div>
-                <a href="#" class="rank_prev" onclick="preventClick(event)"><i class="fas fa-chevron-left"></i></a>
-                <a href="#" class="rank_next" onclick="preventClick(event)"><i class="fas fa-chevron-right"></i></a>
-            </div>
-        </section>
-        <!--게임 순위 끝-->
+      <!--신작게임 preview-->
+      <section id="section_third" class="section">
+        <div class="preview_bar">
+          <h3>신작게임<span>PREVIEW</span></h3>
+        </div>
+        <div class="preview_container">
+          <div class="preview_smr">
+            <h2>
+              <a href="#"
+                >E3 2021 '젤다의 전설 야생의 숨결' 속편 트레일러 공개</a
+              >
+            </h2>
+            <p class="date"><strong>2021.06.18</strong></p>
+            <p class="smr">
+              <a href="#">
+                가슴속에 나의 별 아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕
+                이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별
+                아침이 별 하나에 걱정도 청춘이 까닭입니다. 언덕 이름과 도 청춘이
+                까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 도
+                청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던
+                봅니다. 도 청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는
+                별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도
+                청춘이 까닭입니다. 언덕 이름과 노루, 잔디가 나는 별에도 했던
+                봅니다.
+              </a>
+            </p>
+            <a href="#" class="news_more">more+</a>
+          </div>
+          <div class="preview_video">
+            <iframe
+              width="545"
+              height="350"
+              src="https://www.youtube.com/embed/Pi-MRZBP91I"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!--신작게임 preview 끝-->
 
-        <!--뉴스 섹션 시작-->
-        <section id="section_fifth" class="section">
-            <div class="article_bar">
-                <ul class="article_bar_list">
-                    <li><h3>뉴스</h3></li>
-                    <li><span>최신 기사</span></li>
-                    <li><span>가장 많이 본 기사</span></li>
-                    <li><span>가장 많은 댓글이 달린 기사</span></li>
-                </ul>
+      `
+      <!--게임 순위-->
+      <section id="section_fourth" class="section">
+        <div class="ranking_bar">
+          <h3>실시간 게임 순위</h3>
+        </div>
+        <div class="ranking_container">
+          <div class="ranking_content_left">
+            <h2>PC 게임</h2>
+            <span class="rank_1">1위</span>
+            <span class="score">유저 평점: 9.5</span>
+            <ul class="ranking_list">
+              <li>
+                <a href="#"
+                  ><img src="./images/ranking/ranking_1.jpg" alt="1등 게임"
+                /></a>
+              </li>
+              <li>
+                <span>2위</span><a href="#">리니지</a
+                ><span><i class="fas fa-star"></i>9.3</span>
+              </li>
+              <li>
+                <span>3위</span><a href="#">메이플스토리</a
+                ><span><i class="fas fa-star"></i>9.1</span>
+              </li>
+              <li>
+                <span>4위</span><a href="#">오버워치</a
+                ><span><i class="fas fa-star"></i>9.4</span>
+              </li>
+              <li>
+                <span>5위</span><a href="#">캐치마인드</a
+                ><span><i class="fas fa-star"></i>8.7</span>
+              </li>
+            </ul>
+          </div>
+          <div class="ranking_content_center">
+            <h2>Video 게임</h2>
+            <span class="rank_1">1위</span>
+            <span class="score">유저 평점: 9.5</span>
+            <ul class="ranking_list">
+              <li>
+                <a href="#"
+                  ><img src="./images/ranking/ranking_2.jpg" alt="1등 게임"
+                /></a>
+              </li>
+              <li>
+                <span>2위</span><a href="#">바이오하자드</a
+                ><span><i class="fas fa-star"></i>9.3</span>
+              </li>
+              <li>
+                <span>3위</span><a href="#">엘더스크롤 스카이림</a
+                ><span><i class="fas fa-star"></i>9.1</span>
+              </li>
+              <li>
+                <span>4위</span><a href="#">GTA5</a
+                ><span><i class="fas fa-star"></i>9.4</span>
+              </li>
+              <li>
+                <span>5위</span><a href="#">사이버펑크 2077</a
+                ><span><i class="fas fa-star"></i>8.7</span>
+              </li>
+            </ul>
+          </div>
+          <div class="ranking_content_right">
+            <h2>Mobile 게임</h2>
+            <span class="rank_1">1위</span>
+            <span class="score">유저 평점: 9.5</span>
+            <ul class="ranking_list">
+              <li>
+                <a href="#"
+                  ><img src="./images/ranking/ranking_3.jpg" alt="1등 게임"
+                /></a>
+              </li>
+              <li>
+                <span>2위</span><a href="#">모두의 마블</a
+                ><span><i class="fas fa-star"></i>9.3</span>
+              </li>
+              <li>
+                <span>3위</span><a href="#">쿠키런 킹덤</a
+                ><span><i class="fas fa-star"></i>9.1</span>
+              </li>
+              <li>
+                <span>4위</span><a href="#">애니팡</a
+                ><span><i class="fas fa-star"></i>9.4</span>
+              </li>
+              <li>
+                <span>5위</span><a href="#">포켓몬고</a
+                ><span><i class="fas fa-star"></i>8.7</span>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="rank_prev" onclick="preventClick(event)"
+            ><i class="fas fa-chevron-left"></i
+          ></a>
+          <a href="#" class="rank_next" onclick="preventClick(event)"
+            ><i class="fas fa-chevron-right"></i
+          ></a>
+        </div>
+      </section>
+      <!--게임 순위 끝-->
+
+      <!--뉴스 섹션 시작-->
+      <section id="section_fifth" class="section">
+        <div class="article_bar">
+          <ul class="article_bar_list">
+            <li><h3>뉴스</h3></li>
+            <li><span>최신 기사</span></li>
+            <li><span>가장 많이 본 기사</span></li>
+            <li><span>가장 많은 댓글이 달린 기사</span></li>
+          </ul>
+        </div>
+        <div class="article_container article_con_1">
+          <div class="article_main">
+            <a href="#"
+              ><img
+                src="./images/article/article_1.jpg"
+                alt="m"
+                width="360"
+                height="285"
+            /></a>
+            <div class="article_main_smr">
+              <h2><a href="#">IT시장 20억년 이후의 전망은 과연 어떨까</a></h2>
             </div>
-            <div class="article_container article_con_1">
-                <div class="article_main">
-                    <a href="#"><img src="./images/article/article_1.jpg" alt="m" width="360" height="285"></a>
-                    <div class="article_main_smr">
-                        <h2><a href="#">IT시장 20억년 이후의 전망은 과연 어떨까</a></h2>
-                        
-                    </div>
-                </div>
-                <div class="article_sub">
-                    <a href="#" class="article_more">more+</a>
-                    <ul class="article_list">
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.06.18</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.06.12</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.06.04</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.05.21</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.05.05</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.04.18</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.04.12</span></li>
-                    </ul>
-                </div>
+          </div>
+          <div class="article_sub">
+            <a href="#" class="article_more">more+</a>
+            <ul class="article_list">
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.06.18</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.06.12</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.06.04</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.05.21</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.05.05</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.04.18</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.04.12</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="article_container article_con_2">
+          <div class="article_main">
+            <a href="#"
+              ><img
+                src="./images/article/article_2.jpg"
+                alt="m"
+                width="360"
+                height="285"
+            /></a>
+            <div class="article_main_smr">
+              <h2><a href="#">'닌텐도 스위치' 프로버전 올해 출시 가능성</a></h2>
             </div>
-            <div class="article_container article_con_2">
-                <div class="article_main">
-                    <a href="#"><img src="./images/article/article_2.jpg" alt="m" width="360" height="285"></a>
-                    <div class="article_main_smr">
-                        <h2><a href="#">'닌텐도 스위치' 프로버전 올해 출시 가능성</a></h2>
-                        
-                    </div>
-                </div>
-                <div class="article_sub">
-                    <a href="#" class="article_more">more+</a>
-                    <ul class="article_list">
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.06.18</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.06.12</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.06.04</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.05.21</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.05.05</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.04.18</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.04.12</span></li>
-                    </ul>
-                </div>
+          </div>
+          <div class="article_sub">
+            <a href="#" class="article_more">more+</a>
+            <ul class="article_list">
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.06.18</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.06.12</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.06.04</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.05.21</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.05.05</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.04.18</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.04.12</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="article_container article_con_3">
+          <div class="article_main">
+            <a href="#"
+              ><img
+                src="./images/article/article_3.jpg"
+                alt="m"
+                width="360"
+                height="285"
+            /></a>
+            <div class="article_main_smr">
+              <h2><a href="#">'YHsoft'도대체 어떤 회사인가</a></h2>
             </div>
-            <div class="article_container article_con_3">
-                <div class="article_main">
-                    <a href="#"><img src="./images/article/article_3.jpg" alt="m" width="360" height="285"></a>
-                    <div class="article_main_smr">
-                        <h2><a href="#">'YHsoft'도대체 어떤 회사인가</a></h2>
-                        
-                    </div>
-                </div>
-                <div class="article_sub">
-                    <a href="#" class="article_more">more+</a>
-                    <ul class="article_list">
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.06.18</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.06.12</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.06.04</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.05.21</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.05.05</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.04.18</span></li>
-                        <li><a href="#">언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에 나의 별 아침이 별 하나에 걱정도 됩니다.</a><span>2021.04.12</span></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!--뉴스 섹션 끝-->
+          </div>
+          <div class="article_sub">
+            <a href="#" class="article_more">more+</a>
+            <ul class="article_list">
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.06.18</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.06.12</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.06.04</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.05.21</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.05.05</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.04.18</span>
+              </li>
+              <li>
+                <a href="#"
+                  >언덕 이름과 노루, 잔디가 나는 별에도 했던 봅니다. 가슴속에
+                  나의 별 아침이 별 하나에 걱정도 됩니다.</a
+                ><span>2021.04.12</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--뉴스 섹션 끝-->
     </div>
     <!--전체 배경 wrapper 끝-->
 
     <!--후터 시작-->
     <footer class="section">
-        <div class="footer_top">
-            <div class="footer_top_container">
-                <ul>
-                    <li><span>대한민국 최고 게임 커뮤니티::Wayout</span></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">인터넷광고·제휴문의</a></li>
-                    <li><a href="#">사이트관련문의</a></li>
-                    <li><a href="#">청소년보호정책</a></li>
-                    <li><a href="#">홈페이지이용약관</a></li>   
-                </ul>
-            </div>            
+      <div class="footer_top">
+        <div class="footer_top_container">
+          <ul>
+            <li><span>대한민국 최고 게임 커뮤니티::Wayout</span></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">인터넷광고·제휴문의</a></li>
+            <li><a href="#">사이트관련문의</a></li>
+            <li><a href="#">청소년보호정책</a></li>
+            <li><a href="#">홈페이지이용약관</a></li>
+          </ul>
         </div>
-        <div class="footer_bottom">
-            <div class="footer_bottom_container">
-                <ul>
-                    <li>사업자등록번호 : 000-00-00000</li>
-                    <li>웨이아웃 대표 : 여현슥</li>
-                    <li>TEL : 0000-0000</li>
-                    <li>개인정보 책임자 : 여현식</li>
-                </ul>
-                <p class="footer_logo"><img src="./images/footer_logo.png" alt="Wayout" width="260"></p>
-                <!--모바일에만 보일 후터 로고-->
-                <p class="copyright">Copyright&copy;2021 All Rights Reserved by Wayout</p>
-            </div>            
+      </div>
+      <div class="footer_bottom">
+        <div class="footer_bottom_container">
+          <ul>
+            <li>사업자등록번호 : 000-00-00000</li>
+            <li>웨이아웃 대표 : 여현슥</li>
+            <li>TEL : 0000-0000</li>
+            <li>개인정보 책임자 : 여현식</li>
+          </ul>
+          <p class="footer_logo">
+            <img src="./images/footer_logo.png" alt="Wayout" width="260" />
+          </p>
+          <!--모바일에만 보일 후터 로고-->
+          <p class="copyright">
+            Copyright&copy;2021 All Rights Reserved by Wayout
+          </p>
         </div>
+      </div>
     </footer>
     <!--후터 끝-->
 
     <aside class="left_banner">
-        <a href="#"><img src="./images/ad_banner/side_banner_2.jpg" alt="보스레이브" width="300"></a>
+      <a href="#"
+        ><img
+          src="./images/ad_banner/side_banner_2.jpg"
+          alt="보스레이브"
+          width="300"
+      /></a>
     </aside>
     <!--왼쪽 광고 배너-->
 
     <aside class="right_menu">
-        <div class="hot_post">
-            <ul class="hot_post_list">
-                <li><img src="./images/icon/hot_post.png" alt="Hot"><h2>Hot 유저 게시글</h2><a href="#" class="more">more+</a></li>
-                <li><span>[자유]</span><a href="#">키우던 달팽이가 죽었어요</a><span>[11]</span></li>
-                <li><span>[유머]</span><a href="#">동물에게 공포감을 주는 포즈.jpg</a><span>[5]</span></li>
-                <li><span>[자유]</span><a href="#">리니지2 각성섭 데나 업데이트 됐다</a><span>[7]</span></li>
-                <li><span>[자유]</span><a href="#">(추가글) yhsoft 다녔던 사람입니다.</a><span>[102]</span></li>
-                <li><span>[취미]</span><a href="#">반죽없이 간단한 호떡만들기!</a><span>[6]</span></li>
-                <li><span>[자유]</span><a href="#">근데 여현석이 누구예요?</a><span>[1]</span></li>
-                <li><span>[자유]</span><a href="#">디아블로 캐릭터 추천 좀 해주세요</a><span>[4]</span></li>
-                <li><span>[자유]</span><a href="#">1시간만에 여자친구와 헤어졌습니다..</a><span>[65]</span></li>
-                <li><span>[링크]</span><a href="#">회원가입을 눌러주세요</a><span>[2]</span></li>
-                <li><span>[취미]</span><a href="#">13년째 키우고 있는 선인장 근황 사진</a><span>[8]</span></li>
-            </ul>
-        </div>
-        <div class="right_banner">
-            <a href="#"><img src="./images/ad_banner/side_banner_1.jpg" alt="카트라이더 러쉬" width="300"></a>
-        </div>
-        
+      <div class="hot_post">
+        <ul class="hot_post_list">
+          <li>
+            <img src="./images/icon/hot_post.png" alt="Hot" />
+            <h2>Hot 유저 게시글</h2>
+            <a href="#" class="more">more+</a>
+          </li>
+          <li>
+            <span>[자유]</span><a href="#">키우던 달팽이가 죽었어요</a
+            ><span>[11]</span>
+          </li>
+          <li>
+            <span>[유머]</span><a href="#">동물에게 공포감을 주는 포즈.jpg</a
+            ><span>[5]</span>
+          </li>
+          <li>
+            <span>[자유]</span><a href="#">리니지2 각성섭 데나 업데이트 됐다</a
+            ><span>[7]</span>
+          </li>
+          <li>
+            <span>[자유]</span><a href="#">(추가글) yhsoft 다녔던 사람입니다.</a
+            ><span>[102]</span>
+          </li>
+          <li>
+            <span>[취미]</span><a href="#">반죽없이 간단한 호떡만들기!</a
+            ><span>[6]</span>
+          </li>
+          <li>
+            <span>[자유]</span><a href="#">근데 여현석이 누구예요?</a
+            ><span>[1]</span>
+          </li>
+          <li>
+            <span>[자유]</span><a href="#">디아블로 캐릭터 추천 좀 해주세요</a
+            ><span>[4]</span>
+          </li>
+          <li>
+            <span>[자유]</span
+            ><a href="#">1시간만에 여자친구와 헤어졌습니다..</a
+            ><span>[65]</span>
+          </li>
+          <li>
+            <span>[링크]</span><a href="#">회원가입을 눌러주세요</a
+            ><span>[2]</span>
+          </li>
+          <li>
+            <span>[취미]</span
+            ><a href="#">13년째 키우고 있는 선인장 근황 사진</a><span>[8]</span>
+          </li>
+        </ul>
+      </div>
+      <div class="right_banner">
+        <a href="#"
+          ><img
+            src="./images/ad_banner/side_banner_1.jpg"
+            alt="카트라이더 러쉬"
+            width="300"
+        /></a>
+      </div>
     </aside>
     <!--오른쪽 사이드 메뉴-->
-    
-</body>
+  </body>
+  <script src="./js/index.js"></script>
+  <script src="./js/slide.js"></script>
 </html>

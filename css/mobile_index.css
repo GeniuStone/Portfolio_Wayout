@@ -1,0 +1,221 @@
+/*모바일 화면 시작*/
+@media (max-width:767px){
+    header {display: none;}
+    
+    #gnb {background-color: rgb(89, 91, 228); position: sticky; top: 0; z-index: 60; border-bottom: 3px solid rgb(72, 74, 182); padding: 10px 0 6px 5px;}
+    #gnb .gnb_container {width: 95%; margin: 0 auto; position: relative;}
+    #gnb .gnb_container .main_menu {display: none;}
+    #gnb .gnb_container .all_list {font-size: 35px; position: absolute; top: -5px; left: 88%;padding: 8px; border-radius: 4px; cursor: pointer;}
+    #gnb .mobile_container {position: absolute; top: 11.5vw; left: 0; background-color: rgb(221, 229, 255); width: 100%;}
+    #gnb .mobile_container .mobile_menu {display: none;}
+    #gnb .mobile_container .mobile_menu>li::after {content: ""; display: block; clear: both;}
+    #gnb .mobile_container .mobile_menu>li {white-space: nowrap; border-bottom: 1px solid rgb(179, 179, 179);}
+    #gnb .mobile_container .mobile_menu>li:first-child {padding: 10px 0; text-align: left; background-color: rgb(221, 229, 255); border-bottom: 1px solid rgb(72, 74, 182); position: relative;}
+    #gnb .mobile_container .mobile_menu>li:first-child>a {margin-left: 10px; color: black; position: relative;}
+    #gnb .mobile_container .mobile_menu>li:first-child>a:first-child::after, .mobile_menu>li:first-child>a:nth-child(2)::after {content: ""; display: inline-block; width: 1px; height: 13px; background-color: rgb(72, 74, 182); position: absolute; top: 2px; left: 115%;}
+    #gnb .mobile_container .mobile_menu>li:first-child>a:hover {text-decoration: underline;}
+    #gnb .mobile_container .mobile_menu>li:first-child>a>i {margin-right: 5px;}
+
+    #gnb .mobile_container .mobile_menu>li:first-child form {position: absolute; right: 10px; top: 5px; border-bottom: 2px solid rgb(77, 77, 77); padding-bottom: 5px;}
+    #gnb .mobile_container .mobile_menu>li:first-child form fieldset {height: 100%;}
+    #gnb .mobile_container .mobile_menu>li:first-child form fieldset input.search_box_mobile {border: none; width: 120px; background-color: rgba(255, 255, 255, 0);}
+    #gnb .mobile_container .mobile_menu>li:first-child form fieldset input.search_box_mobile    :focus {outline: none;}
+    #gnb .mobile_container .mobile_menu>li:first-child form fieldset button.search_btn {background-color: rgba(0, 0, 0, 0); border: none; outline: none; cursor: pointer;}
+    #gnb .mobile_container .mobile_menu>li:first-child form fieldset button.search_btn>i {font-size: 20px; color: rgb(88, 88, 88);}
+    /*모바일 메뉴 검색 박스*/
+    #gnb .mobile_container .mobile_menu>li:last-child {border: none;}
+    #gnb .mobile_container .mobile_menu>li>h2 {float: left; width: 20%; text-align: center; position: relative;}
+    #gnb .mobile_container .mobile_menu>li>h2::after {content: ""; display: inline-block; width: 1px; height: 20px; background-color: rgb(72, 74, 182); position: absolute; top: 5px; left: 95%;}
+    #gnb .mobile_container .mobile_menu>li>h2>a {color: rgb(0, 0, 0); font-size: 14px;} 
+    #gnb .mobile_container .mobile_menu>li>ul.sub_menu {float: right; width: 80%;}
+    #gnb .mobile_container .mobile_menu>li>ul.sub_menu>li {display: inline-block; padding-right: 2.5%;}
+    #gnb .mobile_container .mobile_menu>li>ul.sub_menu>li:first-child {padding-left: 10px;}
+    #gnb .mobile_container .mobile_menu>li>ul.sub_menu>li>a {color: black; display: inline-block; padding: 6px 5px; font-size: 14px;}
+    #gnb .mobile_container .mobile_menu>li>ul.sub_menu>li>a:hover {text-decoration: underline;}
+    #gnb .mobile_container .mobile_menu>.all_list_close {background-color: rgb(89, 91, 228); text-align: right;}
+    #gnb .mobile_container .mobile_menu>.all_list_close a {display: inline-block; padding: 5px 0; width: 100%; color: black; padding-right: 20px;}
+    /*모바일 헤더*/
+
+    .mobile_logo > img {width: 35%}
+
+    #bg_wrapper {background-image: url(../images/triangle-mosaic.png); background-repeat: repeat; background-attachment: fixed;}
+    /* fixed 배경 Background pattern from Subtle Patterns */
+
+    #bg_wrapper .mobile_log_search>div.hot_search_bar {display: none;}
+    /*실시간 인기 검색어*/
+
+    @keyframes movement {
+        from {opacity: 0; transform: translateX(-100px);}
+        to {opacity: 1; transform: translateX(0);}
+    }
+    /*슬라이드에 사용할 애니메이션*/
+
+    /*슬라이드 시작*/
+    #section_first .slide {width: 100%; margin: 0 auto; display: flex;}
+    #section_first .slide .slide_container {position: relative; width: 100%;}
+    #section_first .slide .slide_container>a>img {height: 100%; width: 100%;}
+    #section_first .slide .slide_container .slide_smr_1 {background-color: rgba(0, 0, 0, 0.404); position: absolute; top: 0; left: 0; width: 100%; padding: 20px 0 30px 40px;}
+    #section_first .slide .slide_container .slide_smr_2, .slide_smr_3, .slide_smr_4, .slide_smr_5 {background-color: rgba(0, 0, 0, 0.404); position: absolute; top: 0; left: 0; width: 100%; padding: 20px 0 30px 40px;; display: none;}
+    #section_first .slide .slide_container .slide_smr_1>h2, .slide_smr_2>h2, .slide_smr_3>h2, .slide_smr_4>h2, .slide_smr_5>h2 {color: white; font-size: 4vw; margin-bottom: 10px; position: relative;}
+    #section_first .slide .slide_container .slide_smr_1>p, .slide_smr_2>p, .slide_smr_3>p, .slide_smr_4>p, .slide_smr_5>p {color: rgb(255, 255, 255); font-size: 1.6vw; width: 90%; margin-bottom: 12px; line-height: 1.6; position: relative; text-align: justify;}
+    #section_first .slide .slide_container .slide_smr_1>div, .slide_smr_2>div, .slide_smr_3>div, .slide_smr_4>div, .slide_smr_5>div {text-align: right; position: relative;}
+    #section_first .slide .slide_container .slide_smr_1>div>a, .slide_smr_2>div>a, .slide_smr_3>div>a, .slide_smr_4>div>a, .slide_smr_5>div>a {color: rgb(66, 66, 66); display: inline-block; padding: 4px 10px; background-color: rgb(195, 195, 195); border-radius: 15px; margin-right: 10px; position: absolute; top: -10px; right: 80px;}
+    /*슬라이드 설명문*/
+    #section_first .slide .slide_container .slide_btn>a:first-child {position: absolute; top: 35%; left: 0;}
+    #section_first .slide .slide_container .slide_btn>a:last-child {position: absolute; top: 35%; right: 0;}
+    #section_first .slide .slide_container .slide_btn>a>i {font-size: 25px; color: rgb(194, 194, 194); background-color: rgba(0, 0, 0, 0.404); display: inline-block; padding: 10px;}
+    /*슬라이드 좌우 버튼*/
+
+    #section_first .slide .slide_container .slide_bullet {position: absolute; bottom: 10px; left: 44%;}
+    #section_first .slide .slide_container .slide_bullet>a {margin-right: 3px;}
+    /*슬라이드 상태 표시*/
+
+    #section_first .slide {display: block;}
+    /*flex 해제*/
+    #section_first .slide .slide_selector {display: none;}
+    /*슬라이드 선택항목 숨기기*/
+
+    #section_first .slide .hot_post {border: 1px solid rgb(197, 197, 197); width: 100%; background-color: white; border-top: none; position: relative;}
+    #section_first .slide .hot_post .hot_post_list>li {padding: 5px 0 5px 10px; border-bottom: 1px solid gray; white-space: nowrap; border-left: 2px solid rgb(89, 91, 228); border-right: 2px solid rgb(89, 91, 228);}
+    #section_first .slide .hot_post .hot_post_list>li:first-child {background-color: rgb(89, 91, 228); position: relative;}
+    #section_first .slide .hot_post .hot_post_list>li:first-child>img {margin-right: 10px; position: absolute; top: 7px;}
+    #section_first .slide .hot_post .hot_post_list>li:first-child h2 {font-size: 16px; color: white; margin-left: 30px;}
+    #section_first .slide .hot_post .hot_post_list>li:nth-child(even) {background-color: rgb(231, 231, 231);}
+    #section_first .slide .hot_post .hot_post_list>li:nth-child(10) span {color: red;}
+    #section_first .slide .hot_post .hot_post_list>li:last-child {border-bottom: 3px solid rgb(89, 91, 228);}
+    #section_first .slide .hot_post .hot_post_list>li>a {color: rgb(0, 0, 0); margin-left: 8px;}
+    #section_first .slide .hot_post .hot_post_list>li>a:hover {text-decoration: underline;}
+    #section_first .slide .hot_post .hot_post_list>li>span:last-child {color: red; margin-left: 4px;}
+    #section_first .slide .hot_post>a.more {position: absolute; top: 11px; right: 10px; color: white;}
+    .middle_banner {display: none;}
+    /*슬라이드 아래 인기 게시글*/
+
+    #section_second {width: 100%; margin: 0 auto; margin: 20px 0;}
+    #section_second .news_bar {border: 1px solid rgb(197, 197, 197); background-color: white;}
+    #section_second .news_bar .news_bar_list {display: flex; border-bottom: 4px solid rgb(89, 91, 228); padding: 3px 0;}
+    #section_second .news_bar .news_bar_list li:first-child {position: relative;}
+    #section_second .news_bar .news_bar_list li:nth-child(2) {background-color: rgb(228, 228, 228);}
+    #section_second .news_bar .news_bar_list li:first-child::after {content: ""; display: inline-block; width: 1px; height: 25px; background-color: rgb(88, 88, 88); position: absolute; top: 9px; left: 100%;}
+    #section_second .news_bar .news_bar_list li:first-child>h3 {font-size: 2.4vw; padding-top: 10px;}
+    #section_second .news_bar .news_bar_list li {height: 100%; width: 90px; text-align: center;}
+    #section_second .news_bar .news_bar_list li>span {color: rgb(44, 44, 44); padding: 10px 0; display: inline-block; cursor: pointer; width: 100%; font-size: 2.4vw; font-weight: bold;}
+    #section_second .news_bar .news_bar_list li>span:hover {background-color: rgb(228, 228, 228);}
+    /*게임소식 탭 메뉴*/
+
+    /*게임소식 시작*/
+    #section_second .news_con_2, .news_con_3, .news_con_4, .news_con_5 {display: none; margin-top: 15px;}
+    #section_second .news_container:nth-child(2) {margin-top: 15px; display: flex; justify-content: space-between;}
+    #section_second .news_container .news_main {width: 80%; margin: 0 auto; border: 1px solid rgb(197, 197, 197); background-color: white;}
+    #section_second .news_container .news_main>a>img {width: 100%;}
+    #section_second .news_container .news_main .news_main_smr {position: relative; padding: 20px;} 
+    #section_second .news_container .news_main .news_main_smr h2 {margin-bottom: 16px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+    #section_second .news_container .news_main .news_main_smr h2 a{font-size: 25px; color: black; line-height: 1.6;}
+    #section_second .news_container .news_main .news_main_smr p.smr {text-align: justify; margin-bottom: 20px; text-overflow: ellipsis; overflow: hidden; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; width: 100%;}
+    #section_second .news_container .news_main .news_main_smr p.smr a {font-size: 12px; color: black;}
+    #section_second .news_container .news_main .news_main_smr p.smr a:hover {text-decoration: underline;}
+    #section_second .news_container .news_main .news_main_smr p.date {text-align: right; font-size: 12px;}
+    #section_second .news_container .news_main .news_main_smr a.news_more {color: rgb(66, 66, 66); display: inline-block; padding: 4px 10px; position: absolute; top: 80%; left: 85%;}
+    /*메인 기사*/
+
+    #section_second .news_container .news_sub {display: none;}
+    /*서브 기사 3개짜리*/
+    /*게임 소식 끝*/
+
+    #section_third {width: 100%; margin-bottom: 20px;}
+    #section_third .preview_bar {border: 1px solid rgb(197, 197, 197); border-bottom: 4px solid rgb(89, 91, 228); margin-bottom: 15px; background-color: white;}
+    #section_third .preview_bar h3 {padding: 13px 0; margin-left: 15px; font-size: 2.4vw;}
+    #section_third .preview_bar h3 span {margin-left: 10px;}
+    /*게임 preview 타이틀 바*/
+
+    #section_third .preview_container {width: 80%; margin: 0 auto;}
+    #section_third .preview_container .preview_smr {padding: 0 15px; position: relative; border: 1px solid rgb(197, 197, 197); height: 100px; background-color: white;}
+    #section_third .preview_container .preview_smr h2 {margin-top: 10px;}
+    #section_third .preview_container .preview_smr h2 a {font-size: 25px; color: black;}
+    #section_third .preview_container .preview_smr p.date {margin-bottom: 15px; text-align: right; margin-right: 1px;}
+    #section_third .preview_container .preview_smr p.date strong {font-size: 14px;}
+    #section_third .preview_container .preview_smr p.smr {text-overflow: ellipsis; overflow: hidden; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; width: 100%; text-align: justify; display: none;}
+    #section_third .preview_container .preview_smr p.smr a {color: black; line-height: 1.6; display: none;}
+    #section_third .preview_container .preview_smr p.smr a:hover {text-decoration: underline; display: none;}
+    #section_third .preview_container .preview_smr a.news_more {display: none;}
+    #section_third .preview_container .preview_video iframe {width: 100%;}
+    /*신작 게임 프리뷰*/
+
+    /*게임 순위 시작*/
+    #section_fourth {width: 100%; margin: 0 auto; margin-bottom: 30px;}
+    #section_fourth .ranking_bar {border: 1px solid rgb(197, 197, 197); border-bottom: 4px solid rgb(89, 91, 228); margin-bottom: 15px; background-color: white;}
+    #section_fourth .ranking_bar h3 {padding: 13px 0; margin-left: 15px; font-size: 2.4vw;}
+    /*게임 순위 타이틀 바*/
+
+    #section_fourth .ranking_container {width: 88%; justify-content: space-between; position: relative;} 
+    #section_fourth .ranking_container>div {position: relative; border: 1px solid rgb(197, 197, 197); background-color: white; width: 88%; margin-left: 13%; margin-bottom: 10px;}
+    #section_fourth .ranking_container>div:nth-child(2) {display: none;}
+    #section_fourth .ranking_container>div:nth-child(3) {display: none;}
+
+    #section_fourth .ranking_container>a.rank_prev {position: absolute; top: 200px; left: 4%;}
+    #section_fourth .ranking_container>a.rank_prev i {font-size: 35px; color: rgb(66, 66, 66);}
+    #section_fourth .ranking_container>a.rank_next {position: absolute; top: 200px; right: -10%;}
+    #section_fourth .ranking_container>a.rank_next i {font-size: 35px; color: rgb(66, 66, 66);}
+    /*게임 순위 넘기기 버튼*/
+    
+    #section_fourth .ranking_container>div>h2 { border-bottom: 2px solid rgb(89, 91, 228); padding: 4px 0; width: 60%; margin: 0 auto; text-align: center; font-size: 20px;}
+    #section_fourth .ranking_container>div>span.rank_1 {position: absolute; background-color: rgb(40, 195, 156); color: white; font-weight: bold; padding: 5px 10px; top: 47px; left: 0; z-index: 50; font-size: 2.4vw;}
+    #section_fourth .ranking_container>div>span.score {position: absolute; background-color: rgb(40, 195, 156); color: white; font-weight: bold; padding: 5px 10px; top: 47px; left: 74%; z-index: 50; white-space: nowrap; font-size: 2.4vw;}
+    #section_fourth .ranking_container>div>ul {margin-top: 10px;}   
+    #section_fourth .ranking_container>div>ul>li {padding: 6px; text-align: center; display: flex; justify-content: space-between; border-bottom: 1px solid rgb(197, 197, 197);}
+    #section_fourth .ranking_container>div>ul>li:first-child {padding: 0; border: none; overflow: hidden;}
+    #section_fourth .ranking_container>div>ul>li:first-child>a {display: inline-block; width: 100%;}
+    #section_fourth .ranking_container>div>ul>li:first-child>a>img {width: 100%;}
+    #section_fourth .ranking_container>div>ul>li:first-child>a>img:hover {transform: scale(1.04); transition-duration: 200ms;}
+    #section_fourth .ranking_container>div>ul>li>span:first-child {font-weight: bold; padding-left: 5px;}
+    #section_fourth .ranking_container>div>ul>li>a {color: black;}
+    #section_fourth .ranking_container>div>ul>li>a:hover {text-decoration: underline;}
+    #section_fourth .ranking_container>div>ul>li>span:last-child {padding-right: 5px;}
+    #section_fourth .ranking_container>div>ul>li>span:last-child i {color: rgb(228, 210, 55); margin-right: 4px;}
+    /*게임 순위 끝*/
+
+    #section_fifth {width: 100%; padding-bottom: 60px;}
+    #section_fifth .article_bar {border: 1px solid rgb(197, 197, 197); margin-bottom: 15px; background-color: white;}
+    #section_fifth .article_bar .article_bar_list {display: flex; border-bottom: 4px solid rgb(89, 91, 228); padding: 3px 0;}
+    #section_fifth .article_bar .article_bar_list li:first-child {position: relative; width: 90px;}
+    #section_fifth .article_bar .article_bar_list li:first-child::after {content: ""; display: inline-block; width: 1px; height: 25px; background-color: rgb(88, 88, 88); position: absolute; top: 9px; left: 100%;}
+    #section_fifth .article_bar .article_bar_list li:first-child>h3 {font-size: 2.4vw; padding-top: 10px;}
+    #section_fifth .article_bar .article_bar_list li:nth-child(2) {width: 100px;  background-color: rgb(228, 228, 228);}
+    #section_fifth .article_bar .article_bar_list li:nth-child(3) {width: 150px;}
+    #section_fifth .article_bar .article_bar_list li:last-child {width: 210px;}
+    #section_fifth .article_bar .article_bar_list li {height: 100%; text-align: center;}
+    #section_fifth .article_bar .article_bar_list li>span {color: rgb(44, 44, 44); padding: 10px 0; display: inline-block; cursor: pointer; width: 100%; font-size: 2.4vw; font-weight: bold; white-space: nowrap;}
+    #section_fifth .article_bar .article_bar_list li>span:hover {background-color: rgb(228, 228, 228);}
+    /*기사 타이틀 바*/
+
+    #section_fifth .article_con_2, .article_con_3 {display: none;}
+    #section_fifth .article_container {border: 1px solid rgb(197, 197, 197); width: 80%; margin: 0 auto;}
+    #section_fifth .article_container .article_main {width: 100%;}
+    #section_fifth .article_container .article_main>a {width: 100%; height: 100%; display: inline-block;}
+    #section_fifth .article_container .article_main>a>img {width: 100%; height: 100%;}
+    #section_fifth .article_container .article_main .article_main_smr {position: relative;} 
+    #section_fifth .article_container .article_main .article_main_smr h2 {position: absolute; top: -92px; left: 0; background-color: rgba(0, 0, 0, 0.603); padding: 5px 10px; width: 100%;}
+    #section_fifth .article_container .article_main .article_main_smr h2 a{font-size: 25px; color: rgb(255, 255, 255); line-height: 1.6;}
+    /*메인 기사*/
+
+    #section_fifth .article_container .article_sub {display: none;}
+    /*서브기사 목록*/
+
+    /*후터 시작*/
+    footer .footer_top {display: none;}
+    /*후터 상단*/
+
+    footer .footer_bottom {background-color: rgb(59, 59, 59);}
+    footer .footer_bottom .footer_bottom_container {width: 100%;}
+    footer .footer_bottom .footer_bottom_container>ul {display: none;}
+    footer .footer_bottom .footer_bottom_container>p.footer_logo {text-align: center; padding: 10px 0;}
+    footer .footer_bottom .footer_bottom_container>p.copyright {text-align: center; color: rgb(197, 197, 197); padding-bottom: 20px;}
+    /*후터 하단*/
+    /*후터 끝*/
+
+    aside.left_banner {display: none;}
+    /*왼쪽 광고 배너*/
+
+    aside.right_menu {display: none;}
+    /*오른쪽 사이드 메뉴*/
+}
+/*모바일 화면 끝*/
